@@ -6,13 +6,15 @@
     "https://fujifilmxindia.com/wp-json/wc/store/products/34439"
   );
 
-  blackPromise.then((response) => {
+  blackPromise.then(async unction(response) {
     let $prod = document.getElementById('prod');
-    $prod.innerText += `\n\nBlack: ${response.data.is_in_stock}\n\n`;
+    let json = await response.json();
+    $prod.innerText += `\n\nBlack: ${json.is_in_stock}\n\n`;
   });
   silverPromise.then((response) => {
     let $prod = document.getElementById('prod');
-    $prod.innerText += `\n\nSilver: ${response.data.is_in_stock}\n\n`;
+    let json = await response.json();
+    $prod.innerText += `\n\nSilver: ${json.is_in_stock}\n\n`;
   });
 
 

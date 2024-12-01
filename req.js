@@ -3,7 +3,7 @@
     "https://fujifilmxindia.com/wp-json/wc/store/products/34439"
   );
   const silverPromise = fetch(
-    "https://fujifilmxindia.com/wp-json/wc/store/products/34439"
+    "https://fujifilmxindia.com/wp-json/wc/store/products/34553"
   );
 
   blackPromise.then(async function(response) {

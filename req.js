@@ -1,10 +1,10 @@
 (function() {
   let $prod = document.getElementById('prod');
   const blackPromise = fetch(
-    "https://fujifilmxindia.com/wp-json/wc/store/products/34439"
+    "https://fujifilmxindia.com/wp-json/wc/store/products/34439", { mode: "no-cors" }
   );
   const silverPromise = fetch(
-    "https://fujifilmxindia.com/wp-json/wc/store/products/34439"
+    "https://fujifilmxindia.com/wp-json/wc/store/products/34439", { mode: "no-cors" }
   );
 
   blackPromise.then((response) => {
